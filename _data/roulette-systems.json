@@ -1,7 +1,4 @@
-[
-  {
-<<<<<<< Updated upstream
-=======
+[{
     "name": "Diamond Cross",
     "airDate": "2022-02-14",
     "youtubeUrl": "https://www.youtube.com/watch?v=yK78b2EE3VI",
@@ -16,8 +13,7 @@
     "rating": "c",
     "jackaceRating": "f",
     "notes": "Alex gave it a 'Plum+'. I give it an F because you're betting on 36 numbers, which is a huge no-no. Of your $260 bet, over $150 of the money cancels itself out.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "23",
         "amountBet": 260,
@@ -118,8 +114,7 @@
     "rating": "c",
     "jackaceRating": "f",
     "notes": "Lucky Lauren at the helm, Alex dealing. They had to add $1000 to the buy-in to cover the bet on Spin 6. It's absolutely idiotic that this betting progression can't even stand to make the max bet off the bat without buying in for more money. I'm really not a fan of Lauren just 'getting a loan from the casino' when she needed to cover the bet. System ratings should be based on how the system would perform in the real world.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "31",
         "amountBet": 26,
@@ -200,8 +195,7 @@
     "rating": "a",
     "jackaceRating": "c",
     "notes": "David rated this as a Grapefruit. Lauren rated it as a Peach.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "25",
         "amountBet": 10,
@@ -278,7 +272,6 @@
     ]
   },
   {
->>>>>>> Stashed changes
     "name": "Donkey Work",
     "airDate": "2022-02-08",
     "youtubeUrl": "https://www.youtube.com/watch?v=U_R6gEC-MmQ",
@@ -294,8 +287,7 @@
     ],
     "rating": "c",
     "jackaceRating": "d",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "26",
         "amountBet": 48,
@@ -396,8 +388,7 @@
     "rating": "c",
     "jackaceRating": "c",
     "notes": "The Straight-up bets in the center column GROW and SHRINK when you lose/win. I only provided screenshots of the GROWING bet values. David bet on different numbers in the center column randomly.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "7",
         "amountBet": 125,
@@ -497,8 +488,7 @@
     ],
     "rating": "d",
     "jackaceRating": "c",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "16",
         "amountBet": 65,
@@ -611,8 +601,7 @@
     "rating": "c",
     "jackaceRating": "c",
     "notes": "In this system, you need to win 4 in a row before you can 'coast' with 5 Double Street bets. The problem is David is never able to hit that threshold, so the system just drains his bankroll.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "13",
         "amountBet": 100,
@@ -761,8 +750,7 @@
     ],
     "rating": "d",
     "jackaceRating": "b",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "1",
         "amountBet": 70,
@@ -848,8 +836,7 @@
     ],
     "rating": "c",
     "jackaceRating": "f",
-    "spins": [
-      {
+    "spins": [{
         "friend": 1,
         "spin": 1,
         "number": "25",
@@ -986,8 +973,7 @@
     "rating": "c",
     "jackaceRating": "f",
     "notes": "This system is meant to be played on a Single Zero Roulette wheel. The 00 spin was ignored.",
-    "spins": [
-      {
+    "spins": [{
         "friend": 1,
         "spin": 1,
         "number": "18",
@@ -1141,8 +1127,7 @@
     "rating": "b",
     "jackaceRating": "d",
     "notes": "Lucky Lauren and Alex K review this holiday themed system.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "3",
         "amountBet": 170,
@@ -1231,8 +1216,7 @@
     "rating": "c",
     "jackaceRating": "c",
     "notes": "$30 Dozen + 8 $5 Split bets. Alex mixes up his bets, so the RBA screenshot may not match actual payouts.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "3",
         "amountBet": 70,
@@ -1351,8 +1335,7 @@
     "rating": "b",
     "jackaceRating": "b",
     "notes": "$40 each on Two Dozens + $30 on one Double Street. Watch this video to see a \"Roller\", when the ball gets stuck rolling around the wheel!",
-    "spins": [
-      {
+    "spins": [{
         "friend": 1,
         "spin": 1,
         "number": "7",
@@ -1514,8 +1497,7 @@
     ],
     "rating": "d",
     "jackaceRating": "f",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "12",
         "amountBet": 25,
@@ -1656,8 +1638,7 @@
     "rating": "d",
     "jackaceRating": "d",
     "notes": "The red numbers are supposed to represent the snake wrapped around the rod of the Greek figure of healing and medicine.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "15",
         "amountBet": 22,
@@ -1794,8 +1775,7 @@
     "rating": "c",
     "jackaceRating": "f",
     "notes": "There are a lot of mistakes in the video, including the payouts by Timmy.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "18",
         "amountBet": 95,
@@ -1923,8 +1903,7 @@
     "rating": "c",
     "jackaceRating": "f",
     "notes": "Why the Hell would you bet $5 on all three columns? That is just idiotic.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "34",
         "amountBet": 250,
@@ -2050,8 +2029,7 @@
     "rating": "a",
     "jackaceRating": "c",
     "notes": "Alex gave the modified (postive Martingale) system an A - Grapefruit. Friend 1: Original System; Friend 2: Modified System (positive Martingale)",
-    "spins": [
-      {
+    "spins": [{
         "friend": 1,
         "spin": 1,
         "number": "15",
@@ -2236,6 +2214,290 @@
     ]
   },
   {
+    "name": "Comp Killer",
+    "airDate": "2021-02-27",
+    "youtubeUrl": "https://www.youtube.com/watch?v=iuziINilUvg",
+    "reviewUrl": "2021-02-27-Comp-Killer",
+    "rbaImageUrls": [
+      "00-rba-0-800x440.png"
+    ],
+    "buyIn": 1400,
+    "bets": [
+      175
+    ],
+    "rating": "a",
+    "jackaceRating": "d",
+    "notes": "Alex gave it a Grapefruit. Lauren gave it a Peach.",
+    "spins": [{
+        "spin": 1,
+        "number": "27",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 2,
+        "number": "24",
+        "amountBet": 175,
+        "result": 5
+      },
+      {
+        "spin": 3,
+        "number": "23",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 4,
+        "number": "21",
+        "amountBet": 175,
+        "result": -175
+      },
+      {
+        "spin": 5,
+        "number": "16",
+        "amountBet": 175,
+        "result": 5
+      },
+      {
+        "spin": 6,
+        "number": "5",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 7,
+        "number": "14",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 8,
+        "number": "31",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 9,
+        "number": "22",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 10,
+        "number": "30",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 11,
+        "number": "5",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 12,
+        "number": "21",
+        "amountBet": 175,
+        "result": -175
+      },
+      {
+        "spin": 13,
+        "number": "30",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 14,
+        "number": "23",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 15,
+        "number": "34",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 16,
+        "number": "23",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 17,
+        "number": "10",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 18,
+        "number": "1",
+        "amountBet": 175,
+        "result": 5
+      },
+      {
+        "spin": 19,
+        "number": "3",
+        "amountBet": 175,
+        "result": 50
+      },
+      {
+        "spin": 20,
+        "number": "3",
+        "amountBet": 175,
+        "result": 50
+      }
+    ]
+  },
+  {
+    "name": "Play All Day",
+    "airDate": "2021-02-12",
+    "youtubeUrl": "https://www.youtube.com/watch?v=FkI6TMUG34U",
+    "reviewUrl": "2021-02-12-Play-All-Day",
+    "rbaImageUrls": [
+      "00-rba-0-800x440.png",
+      "00-rba-1-800x440.png",
+      "00-rba-2-800x440.png"
+    ],
+    "buyIn": 1000,
+    "bets": [
+      110,
+      220,
+      440
+    ],
+    "rating": "b",
+    "jackaceRating": "d",
+    "notes": "Alex and Lauren both gave this a Peach. I gave it an eggplant because of the $40 in Street bets that can be consoidated to a single $40 bet on the 2nd Dozen. I'm not sure why my recorded win is $50 higher than their $200 win.",
+    "spins": [{
+        "spin": 1,
+        "number": "36",
+        "amountBet": 110,
+        "result": -110
+      },
+      {
+        "spin": 2,
+        "number": "18",
+        "amountBet": 220,
+        "result": 140
+      },
+      {
+        "spin": 3,
+        "number": "25",
+        "amountBet": 110,
+        "result": -110
+      },
+      {
+        "spin": 4,
+        "number": "20",
+        "amountBet": 110,
+        "result": 140
+      },
+      {
+        "spin": 5,
+        "number": "29",
+        "amountBet": 110,
+        "result": 100
+      },
+      {
+        "spin": 6,
+        "number": "27",
+        "amountBet": 110,
+        "result": -20
+      },
+      {
+        "spin": 7,
+        "number": "16",
+        "amountBet": 110,
+        "result": 70
+      },
+      {
+        "spin": 8,
+        "number": "27",
+        "amountBet": 110,
+        "result": -20
+      },
+      {
+        "spin": 9,
+        "number": "32",
+        "amountBet": 110,
+        "result": 10
+      },
+      {
+        "spin": 10,
+        "number": "25",
+        "amountBet": 110,
+        "result": -110
+      },
+      {
+        "spin": 11,
+        "number": "19",
+        "amountBet": 220,
+        "result": 140
+      },
+      {
+        "spin": 12,
+        "number": "23",
+        "amountBet": 110,
+        "result": 10
+      },
+      {
+        "spin": 13,
+        "number": "25",
+        "amountBet": 110,
+        "result": -110
+      },
+      {
+        "spin": 14,
+        "number": "7",
+        "amountBet": 220,
+        "result": 20
+      },
+      {
+        "spin": 15,
+        "number": "4",
+        "amountBet": 220,
+        "result": 20
+      },
+      {
+        "spin": 16,
+        "number": "18",
+        "amountBet": 220,
+        "result": 140
+      },
+      {
+        "spin": 17,
+        "number": "11",
+        "amountBet": 110,
+        "result": 70
+      },
+      {
+        "spin": 18,
+        "number": "0",
+        "amountBet": 110,
+        "result": -110
+      },
+      {
+        "spin": 19,
+        "number": "00",
+        "amountBet": 220,
+        "result": -220
+      },
+      {
+        "spin": 20,
+        "number": "26",
+        "amountBet": 440,
+        "result": -80
+      },
+      {
+        "spin": 21,
+        "number": "19",
+        "amountBet": 440,
+        "result": 280
+      }
+    ]
+  },
+  {
     "name": "Modified 24 + 8",
     "airDate": "2020-08-06",
     "youtubeUrl": "https://www.youtube.com/watch?v=dZnvKwezDlI",
@@ -2254,8 +2516,7 @@
     "rating": "",
     "jackaceRating": "d",
     "notes": "I'm not a fan of systems where you bet a lot and push most of the time.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "32",
         "amountBet": 150,
@@ -2377,8 +2638,7 @@
     "rating": "",
     "jackaceRating": "f",
     "notes": "This system is absolutely idiotic, with betting on all 36 numbers as well as individual Straight-up bets that can be consolidated. I couldn't tell what rating they gave it.",
-    "spins": [
-      {
+    "spins": [{
         "friend": 1,
         "spin": 1,
         "number": "23",
@@ -2468,308 +2728,307 @@
     "rating": "",
     "jackaceRating": "f",
     "notes": "Why waste your time betting $1 on each red number? There's literally a betting spot named 'RED' that you can put your money on for your convennience.",
-    "spins": [
-      {
+    "spins": [{
         "spin": 1,
         "number": "15",
         "amountBet": 25,
         "result": -25
       },
       {
-       "spin": 2,
-       "number": "5",
-       "amountBet": 25,
-       "result": 21
+        "spin": 2,
+        "number": "5",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 3,
-       "number": "00",
-       "amountBet": 25,
-       "result": 11
+        "spin": 3,
+        "number": "00",
+        "amountBet": 25,
+        "result": 11
       },
       {
-       "spin": 4,
-       "number": "0",
-       "amountBet": 25,
-       "result": 11
+        "spin": 4,
+        "number": "0",
+        "amountBet": 25,
+        "result": 11
       },
       {
-       "spin": 5,
-       "number": "29",
-       "amountBet": 25,
-       "result": -25
+        "spin": 5,
+        "number": "29",
+        "amountBet": 25,
+        "result": -25
       },
       {
-       "spin": 6,
-       "number": "20",
-       "amountBet": 25,
-       "result": -25,
-       "notes": "After losing twice in a row, Timmy switched to Black instead of Red."
+        "spin": 6,
+        "number": "20",
+        "amountBet": 25,
+        "result": -25,
+        "notes": "After losing twice in a row, Timmy switched to Black instead of Red."
       },
       {
-       "spin": 7,
-       "number": "8",
-       "amountBet": 25,
-       "result": 21
+        "spin": 7,
+        "number": "8",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 8,
-       "number": "29",
-       "amountBet": 25,
-       "result": 21
+        "spin": 8,
+        "number": "29",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 9,
-       "number": "0",
-       "amountBet": 25,
-       "result": 11
+        "spin": 9,
+        "number": "0",
+        "amountBet": 25,
+        "result": 11
       },
       {
-       "spin": 10,
-       "number": "31",
-       "amountBet": 25,
-       "result": 21
+        "spin": 10,
+        "number": "31",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 11,
-       "number": "0",
-       "amountBet": 25,
-       "result": 11
+        "spin": 11,
+        "number": "0",
+        "amountBet": 25,
+        "result": 11
       },
       {
-       "spin": 12,
-       "number": "34",
-       "amountBet": 25,
-       "result": -25
+        "spin": 12,
+        "number": "34",
+        "amountBet": 25,
+        "result": -25
       },
       {
-       "spin": 13,
-       "number": "18",
-       "amountBet": 25,
-       "result": -25
+        "spin": 13,
+        "number": "18",
+        "amountBet": 25,
+        "result": -25
       },
       {
-       "spin": 14,
-       "number": "29",
-       "amountBet": 25,
-       "result": -25,
-       "notes": "Timmy switched back to Red"
+        "spin": 14,
+        "number": "29",
+        "amountBet": 25,
+        "result": -25,
+        "notes": "Timmy switched back to Red"
       },
       {
-       "spin": 15,
-       "number": "23",
-       "amountBet": 25,
-       "result": 21
+        "spin": 15,
+        "number": "23",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 16,
-       "number": "23",
-       "amountBet": 25,
-       "result": 21
+        "spin": 16,
+        "number": "23",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 17,
-       "number": "14",
-       "amountBet": 25,
-       "result": 21
+        "spin": 17,
+        "number": "14",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 18,
-       "number": "0",
-       "amountBet": 25,
-       "result": 11
+        "spin": 18,
+        "number": "0",
+        "amountBet": 25,
+        "result": 11
       },
       {
-       "spin": 19,
-       "number": "17",
-       "amountBet": 25,
-       "result": -25
+        "spin": 19,
+        "number": "17",
+        "amountBet": 25,
+        "result": -25
       },
       {
-       "spin": 20,
-       "number": "25",
-       "amountBet": 25,
-       "result": 21
+        "spin": 20,
+        "number": "25",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 21,
-       "number": "14",
-       "amountBet": 25,
-       "result": 21
+        "spin": 21,
+        "number": "14",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 22,
-       "number": "19",
-       "amountBet": 25,
-       "result": 21
+        "spin": 22,
+        "number": "19",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 23,
-       "number": "15",
-       "amountBet": 25,
-       "result": -25
+        "spin": 23,
+        "number": "15",
+        "amountBet": 25,
+        "result": -25
       },
       {
-       "spin": 24,
-       "number": "2",
-       "amountBet": 25,
-       "result": -25
+        "spin": 24,
+        "number": "2",
+        "amountBet": 25,
+        "result": -25
       },
       {
-       "spin": 25,
-       "number": "2",
-       "amountBet": 25,
-       "result": 21,
-       "notes": "Timmy switched back to Black."
+        "spin": 25,
+        "number": "2",
+        "amountBet": 25,
+        "result": 21,
+        "notes": "Timmy switched back to Black."
       },
       {
-       "spin": 26,
-       "number": "21",
-       "amountBet": 25,
-       "result": -25
+        "spin": 26,
+        "number": "21",
+        "amountBet": 25,
+        "result": -25
       },
       {
-       "spin": 27,
-       "number": "11",
-       "amountBet": 25,
-       "result": 21
+        "spin": 27,
+        "number": "11",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 28,
-       "number": "22",
-       "amountBet": 25,
-       "result": 21 
+        "spin": 28,
+        "number": "22",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 29,
-       "number": "6",
-       "amountBet": 25,
-       "result": 21
+        "spin": 29,
+        "number": "6",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 30,
-       "number": "4",
-       "amountBet": 25,
-       "result": 21
+        "spin": 30,
+        "number": "4",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 31,
-       "number": "10",
-       "amountBet": 25,
-       "result": 21
+        "spin": 31,
+        "number": "10",
+        "amountBet": 25,
+        "result": 21
       },
       {
-       "spin": 32,
-       "number": "16",
-       "amountBet": 25,
-       "result": -25
+        "spin": 32,
+        "number": "16",
+        "amountBet": 25,
+        "result": -25
       },
       {
-       "spin": 33,
-       "number": "1",
-       "amountBet": 50,
-       "result": -50,
-       "notes": "They doubled the bet here."
+        "spin": 33,
+        "number": "1",
+        "amountBet": 50,
+        "result": -50,
+        "notes": "They doubled the bet here."
       },
       {
-       "spin": 34,
-       "number": "2",
-       "amountBet": 50,
-       "result": -50
+        "spin": 34,
+        "number": "2",
+        "amountBet": 50,
+        "result": -50
       },
       {
-       "spin": 35,
-       "number": "31",
-       "amountBet": 50,
-       "result": -50
+        "spin": 35,
+        "number": "31",
+        "amountBet": 50,
+        "result": -50
       },
       {
-       "spin": 36,
-       "number": "6",
-       "amountBet": 50,
-       "result": 42
+        "spin": 36,
+        "number": "6",
+        "amountBet": 50,
+        "result": 42
       },
       {
-       "spin": 37,
-       "number": "11",
-       "amountBet": 50,
-       "result": 42
+        "spin": 37,
+        "number": "11",
+        "amountBet": 50,
+        "result": 42
       },
       {
-       "spin": 38,
-       "number": "0",
-       "amountBet": 50,
-       "result": 22
+        "spin": 38,
+        "number": "0",
+        "amountBet": 50,
+        "result": 22
       },
       {
-       "spin": 39,
-       "number": "32",
-       "amountBet": 50,
-       "result": -50
+        "spin": 39,
+        "number": "32",
+        "amountBet": 50,
+        "result": -50
       },
       {
-       "spin": 40,
-       "number": "1",
-       "amountBet": 50,
-       "result": -50
+        "spin": 40,
+        "number": "1",
+        "amountBet": 50,
+        "result": -50
       },
       {
-       "spin": 41,
-       "number": "28",
-       "amountBet": 50,
-       "result": -50
+        "spin": 41,
+        "number": "28",
+        "amountBet": 50,
+        "result": -50
       },
       {
-       "spin": 42,
-       "number": "35",
-       "amountBet": 75,
-       "result": 63,
-       "notes": "They added a third chip to the bets"
+        "spin": 42,
+        "number": "35",
+        "amountBet": 75,
+        "result": 63,
+        "notes": "They added a third chip to the bets"
       },
       {
-       "spin": 43,
-       "number": "15",
-       "amountBet": 75,
-       "result": 63
+        "spin": 43,
+        "number": "15",
+        "amountBet": 75,
+        "result": 63
       },
       {
-       "spin": 44,
-       "number": "4",
-       "amountBet": 100,
-       "result": 84
+        "spin": 44,
+        "number": "4",
+        "amountBet": 100,
+        "result": 84
       },
       {
-       "spin": 45,
-       "number": "14",
-       "amountBet": 100,
-       "result": -100
+        "spin": 45,
+        "number": "14",
+        "amountBet": 100,
+        "result": -100
       },
       {
-       "spin": 46,
-       "number": "11",
-       "amountBet": 125,
-       "result": 105
+        "spin": 46,
+        "number": "11",
+        "amountBet": 125,
+        "result": 105
       },
       {
-       "spin": 47,
-       "number": "16",
-       "amountBet": 125,
-       "result": -125
+        "spin": 47,
+        "number": "16",
+        "amountBet": 125,
+        "result": -125
       },
       {
-       "spin": 48,
-       "number": "16",
-       "amountBet": 150,
-       "result": -150,
-       "notes": "Bought in for more and increased to 6 units."
+        "spin": 48,
+        "number": "16",
+        "amountBet": 150,
+        "result": -150,
+        "notes": "Bought in for more and increased to 6 units."
       },
       {
-       "spin": 49,
-       "number": "33",
-       "amountBet": 12,
-       "result": -12,
-       "notes": "Timmy just bet his remaining chips on 20 and lost"
+        "spin": 49,
+        "number": "33",
+        "amountBet": 12,
+        "result": -12,
+        "notes": "Timmy just bet his remaining chips on 20 and lost"
       }
-  ]
+    ]
   }
 ]
