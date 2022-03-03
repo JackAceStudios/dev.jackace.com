@@ -1,9 +1,9 @@
-# jackace.com
+# dev.jackace.com
 
-Production environment for jackace.com
+Development environment for jackace.com
 
-https://www.jackace.com
+https://dev.jackace.com
 
-Public repository for the jackace.com site.
+Public repository for the dev.jackace.com site.
 
 If you notice any errors, please submit a pull request to correct them!
