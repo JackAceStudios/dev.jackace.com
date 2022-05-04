@@ -30,8 +30,8 @@
     "categories": ["poker"],
     "seeAlso": ["one-outer"],
     "summary": "The only undealt card that will help you.",
-    "definition": "This usually applies to poker when you're drawing to a one-outer. The case card is the only undealt card that will turn your losing hand into a winning hand.",
-    "example": "Teddy KGB rivered a 6h, which was his case card and took down a monster pot."
+    "definition": "The case card is the only undealt card that will turn your losing hand into a winning hand. This usually applies to poker when you're drawing to a one-outer.",
+    "example": "Teddy KGB rivered a 6h, which was his case card and he took down a monster pot."
   },
   {
     "term": "distributive property",
@@ -44,6 +44,12 @@
     "categories": ["general gambling"],
     "summary": "expected value",
     "definition": "The predicted value of a unknown outcome, calculated as the sum of all possible values each multiplied by the probability of its occurrence."
+  },
+  {
+    "term": "fiat",
+    "categories": ["cryptocurrencies"],
+    "summary": "Traditional cash",
+    "definition": "Fiat is traditional cash in a well established currency such as the US Dollar. This is opposed to cryptocurrencies, which are digital currencies, supported by a blockchain."
   },
   {
     "term": "Martingale",
@@ -81,6 +87,12 @@
     "seeAlso": ["Basket Bet"],
     "summary": "The 5-Number Bet in Roulette covering 0, 00, 1, 2, and 3.",
     "definition": "The Top Line Bet is the 5-Number bet in Roulette (covering 0, 00, 1, 2, and 3) and is notorious for being the worst single bet in Roulette (-7.89% house advantage on Double Zero, and -10.26% house advantage in Triple Zero)."
+  },
+  {
+    "term": "whale",
+    "categories": ["general gambling"],
+    "summary": "A large betting player",
+    "definition": "A whale is a gambler who likes to bet large sums of money. They are generally welcomed by casino staff."
   },
   {
     "term": "Wonging",

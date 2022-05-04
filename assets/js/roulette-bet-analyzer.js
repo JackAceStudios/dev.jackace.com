@@ -1,5 +1,5 @@
 //<![CDATA[
-var indexes = ['0', '00', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36']
+let indexes = ['0', '00', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36']
 
 $(document).ready(function() {
     addEventHandlers();
@@ -8,11 +8,61 @@ $(document).ready(function() {
 
 function clearAll() {
     $('input').each(function() {
-    if (this.type === 'text') {
-        this.value = '';
-    }
+        if (this.type === 'text') {
+            this.value = '';
+        }
     });
     
+    updateUi();
+}
+
+function doubleUp() {
+    $('input').each(function() {
+        if (this.type === 'text' && this.value) {
+            let currentValue = parseFloat(this.value);
+            this.value = currentValue * 2;
+        }
+    });
+    
+    updateUi();
+}
+
+function increment(value) {
+    $('input').each(function() {
+        if (this.type === 'text' && this.value) {
+            let currentValue = parseFloat(this.value);
+            this.value = currentValue + value;
+        }
+    });
+    
+    updateUi();
+}
+
+function distribute(amountToSubtract) {
+    let straightUpAmounts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    for (let i = 0; i < indexes.length; i++) {
+        let bet = $('#eq-' + indexes[i]).text();
+        if (bet) {
+            straightUpAmounts[i] = parseFloat(bet);
+        }
+    }
+
+    clearAll();
+
+    if (amountToSubtract) {
+        for (let i = 0; i < indexes.length; i++) {
+            if (straightUpAmounts[i] > 0) {
+                straightUpAmounts[i] = formatDecimal(straightUpAmounts[i] - amountToSubtract);
+            }
+        }
+    }
+    
+    for (let i = 0; i < indexes.length; i++) {
+        if (straightUpAmounts[i] > 0) {
+            $('#b-x1-' + indexes[i]).val(formatDecimal(straightUpAmounts[i]));
+        }
+    }
+
     updateUi();
 }
 
@@ -25,31 +75,31 @@ function addEventHandlers() {
 }
 
 function updateUi() {
-    var totalBet = 0;
-    var equityTable = [];
-    var totalNumbersCovered = 0;
+    let totalBet = 0;
+    let equityTable = [];
+    let totalNumbersCovered = 0;
     
-    var showBasketBetWarning = false;
-    var show36NumberBetWarning = false;
-    var basketBet = 0;
+    let showBasketBetWarning = false;
+    let show36NumberBetWarning = false;
+    let basketBet = 0;
 
     $('#warningBasketBetRow').attr('class', 'hiddenRow');
     $('#warning36NumbersBetRow').attr('class', 'hiddenRow');
 
     // Loop through all inputs
     $('input').each(function() {
-    var currentBet = parseBet(this);
+    let currentBet = parseBet(this);
     
     if (currentBet.amount > 0) {
         totalBet += currentBet.amount
         
-        for (var i = 0; i < currentBet.coveredNumbers.length; i++) {
-            var currentNumber = currentBet.coveredNumbers[i];
+        for (let i = 0; i < currentBet.coveredNumbers.length; i++) {
+            let currentNumber = currentBet.coveredNumbers[i];
             if (!equityTable[currentNumber]) {
                 equityTable[currentNumber] = 0.0;
                 totalNumbersCovered++;
             }
-            //var currentEquity = parseFloat(equityTable[currentNumber]);
+            //let currentEquity = parseFloat(equityTable[currentNumber]);
 
             if (currentBet.numberCount === 5) {
                 // You get short changed on the 5-number bet
@@ -70,8 +120,8 @@ function updateUi() {
         $('#warningBasketBetRow').attr('class', '');
     }
     if (show36NumberBetWarning) {
-        var allEquity = [];
-        for (var key in equityTable) {
+        let allEquity = [];
+        for (let key in equityTable) {
             allEquity.push({
                 number: key,
                 amount: equityTable[key]
@@ -109,6 +159,8 @@ function updateUi() {
             // TODO: Check to see whether we can remove ALL bets!
             if (allEquity[0].amount < allEquity[35].amount) {
                 $('#equityToRemoveFor36Div').attr('class', null);
+                // Set javascript link for removing equity
+                $('#equityToRemoveFor36Link').attr("href", "javascript:distribute(" + formatDecimal(allEquity[0].amount) + ");");
                 $('.totalEquityToRemove').text(formatDecimal(allEquity[0].amount));
             } else {
                 $('#removeEverythingDiv').attr('class', null);
@@ -143,7 +195,7 @@ function updateUi() {
         $('#warning36NumbersBetRow').attr('class', '');
     }
 
-    for (var i = 0; i < 38; i++) {
+    for (let i = 0; i < 38; i++) {
     // Clear out equity divs
     $('#eq-' + indexes[i]).text('');
 
@@ -159,13 +211,13 @@ function updateUi() {
     }
 
     for (const [key, value] of Object.entries(equityTable)) {
-    var truncatedValue = value.toFixed(2);
+    let truncatedValue = value.toFixed(2);
     $('#eq-' + key).text(truncatedValue);
     }
 
     for (const [key, value] of Object.entries(equityTable)) {
-        var win = ((36 * value) - totalBet).toFixed(2);
-        var winText = formatDecimal(win);
+        let win = ((36 * value) - totalBet).toFixed(2);
+        let winText = formatDecimal(win);
 
         $('#win-' + key).text(winText);
         
@@ -181,31 +233,31 @@ function updateUi() {
         }
     }
 
-    $('#totalAmountBetDiv').text(totalBet);
+    let totalBetFormatted = formatDecimal(totalBet)
+    $('#totalAmountBetDiv').text(totalBetFormatted);
 
     if (!showBasketBetWarning) {
         // Simple calculation of house advantage
         $('#totalExpectedValueDiv').text((- totalBet * 0.0526).toFixed(2));
+        $('#compValueDiv').text((totalBet * 0.0526 * 0.20).toFixed(2));
     } else {
         // Complicated calculation because of 5-number bet
-        var otherBets = totalBet - basketBet;
-        var totalLoss = 0.0526 * otherBets + 0.0789 * basketBet;
+        // TODO: THIS SHOULD NOT UPDATE WHEN YOU DISMISS THE BASKET BET WARNING
+        let otherBets = totalBet - basketBet;
+        let totalLoss = 0.0526 * otherBets + 0.0789 * basketBet;
         $('#totalExpectedValueDiv').text((-totalLoss).toFixed(2));
+        $('#compValueDiv').text((totalLoss * 0.20).toFixed(2));
     }
 }
 
-function fixBets() {
-    
-}
-
 function parseBet(inputElement) {
-    var parts = inputElement.id.split("-");
-    var numberCount = getNumberCount(parts[1]);
-    var payout = getPayout(parts[1]);
-    var coveredNumbers = getCoveredNumbers(parts[1], parts[2]);
+    let parts = inputElement.id.split("-");
+    let numberCount = getNumberCount(parts[1]);
+    let payout = getPayout(parts[1]);
+    let coveredNumbers = getCoveredNumbers(parts[1], parts[2]);
     // TODO: validate that the value is an integer
-    //var amount = parseInt(inputElement.value);
-    var amount = parseFloat(inputElement.value);
+    //let amount = parseInt(inputElement.value);
+    let amount = parseFloat(inputElement.value);
     
     return {
         identifier: parts[2],
@@ -244,7 +296,19 @@ function getPayout(xType) {
 }
 
 function getCoveredNumbers(xType, identifier) {
-    var parsedValue = parseInt(identifier);
+    if (xType === 'x3' && identifier === '0_00_2') {
+        // The 0-00-2 bet
+        return ['0', '00', '2']
+    }
+    if (xType === 'x3' && identifier === '00_2_3') {
+        // The 00-2-3 bet
+        return ['00', '2', '3']
+    }
+    if (xType === 'x3' && identifier === '0_1_2') {
+        // The 0-1-2 bet
+        return ['0', '1', '2']
+    }
+    let parsedValue = parseInt(identifier);
     switch (xType) {
     case 'x1':
         return [identifier];
@@ -308,7 +372,7 @@ function getCoveredNumbersX18(identifier) {
 function formatDecimal(value) {
     value = parseFloat(value);
     value = value.toFixed(2);
-    var returnValue = value.toString();
+    let returnValue = value.toString();
 
     if (returnValue.indexOf('.00') > -1) {
         // Truncate anything with zero cents

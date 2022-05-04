@@ -1,0 +1,1304 @@
+---
+layout: post
+title: "How Does 'Running It Twice' Affect Your Odds in Poker?"
+date: 2022-04-27 00:01:00 -0800
+author: Jack Hayes
+tags: [poker,running it twice]
+excerpt_image: "/assets/img/posts/2022-04-27/00-title-800x505.png"
+summary: "How does Running it Twice, Thrice, or even 44 Times affect your EV and Variance in Poker?"
+comments: true
+published: true
+math: true
+---
+
+<img src="{{site.baseurl}}{{page.excerpt_image}}" class="excerpt-image" />
+<p>
+    Around 2006, an option for <i>"Running it Twice"</i> started to become popular on televised
+    poker cash games. It was becoming a regular occurrence on the show <i>High Stakes Poker</i> on
+    the <a href="https://www.gameshownetwork.com/" target="_blank">Game Show Network</a> (GSN) and
+    several other cash game shows.
+</p>
+<p>
+    But what affect does running it once, twice, or even <i>44 times</i> do to your expected
+    result? How does it affect your variance?
+</p>
+
+<h2>What is "Running it Twice"?</h2>
+<p>
+    Two players can agree to "run it twice" when one of the players is all-in and there are
+    still more cards to come. When the players agree to run it twice, they are agreeing to complete
+    the hand with two sets of outcomes. If there is one card left to be dealt, then two separate River
+    cards will be dealt, each card acting as a the final community card for two separate outcomes. The
+    winner of each outcome will be entited to a half of the total pot.
+</p>
+<p>
+    If you win both times, you win the entire pot. If you lose both times, you lose the entire pot.
+    If you win one and lose the other, then the pot is divided in half and distributed amongst the two
+    players. 
+</p>
+
+<h3>What about Running it 3...4...or even 44 Times?</h3>
+<p>
+    You can "run it" multiple times. Each time you run it, the pot divisions become smaller and 
+    smaller, and it becomes more likely that the underdog will get at least <i>some</i> of his money
+    back.
+</p>
+
+<h2>How does Running it Multiple Times affect Your Expected Value (EV)?</h2>
+<p>
+    It doesn't.
+</p>
+<p>
+    Your EV is exactly the same whether you run it once, twice, or even 44 times.
+</p>
+
+<h2>How does Running it Multiple Times affect Your Variance?</h2>
+<p>
+    The only statistical change that results from multiple run-outs is a lowering of
+    variance. The more turns and rivers you see, the more your results will resemble
+    the expected result and the lower the fluctuation to your bankroll.
+</p>
+
+<h2>Calculating the Results of Running it N Times</h2>
+<p>
+    Most seasoned poker players are already aware that running it multiple times
+    results in <i>zero</i> change to your EV. But I've often heard noobs (incorrectly)
+    say that running it multiple times is bad for the favorite in the situation, and that
+    running it twice is good for the underdog's EV.
+</p>
+<p>
+    We'll see why these people are incorrect by looking at a few examples.
+</p>
+
+<h3>1-outer on the River</h3>
+<p>
+    Let's take a look at an extreme situation.
+</p>
+<p>
+    I think the best way to illustrate that the EV remains the same is to look at the case
+    where the underdog has a one-outer with just the River to come.
+</p>
+
+<figure>
+    <div class="poker-felt">
+        <div class="poker-row">
+            <div class="poker-hand">
+                <div class="poker-hand-title">
+                    Favorite
+                </div>
+                {%- include card.html card="Ah" class="card-lg" -%}
+                {%- include card.html card="Kh" class="card-lg" -%}
+            </div>
+            <div class="poker-hand">
+                <div class="poker-hand-title">
+                    Underdog
+                </div>
+                {%- include card.html card="3h" class="card-lg" -%}
+                {%- include card.html card="2h" class="card-lg" -%}
+            </div>
+        </div>
+        <div class="poker-row">
+            <div class="poker-hand">
+                <div class="poker-hand-title">
+                    Board
+                </div>
+                {%- include card.html card="4h" class="card-lg" -%}
+                {%- include card.html card="5h" class="card-lg" -%}
+                {%- include card.html card="9c" class="card-lg" -%}
+                {%- include card.html card="Jh" class="card-lg" -%}
+            </div>
+        </div>
+    </div>
+    <figcaption>
+        In this example, the Favorite has the nut-flush and the Underdog is drawing to
+        the case 
+        {% include card.html card="6h" showImage=false %}.
+    </figcaption>
+</figure>
+
+<p>
+    There are 44 unknown cards and only 1 card will make the underdog a winner.
+    If the pot were $44, then he'd have an EV of $1 (\(\frac{1}{44}\) of the $44 pot).
+</p>
+<p>
+    <i>So let's run it 44 times!</i>
+</p>
+<p>
+    To do this, we have to ignore burn cards and deal out all 44 River cards to
+    make a total of forty-four $1 pots.
+</p>
+<p>
+    Since we already know the dog is drawing to a one-outer, we know exactly one
+    of those $1 pots will have his case
+    {% include card.html card="6h" showImage=false %}, netting him $1 and awarding the
+    favorite $43.
+</p>
+<p>
+    So both the EV and the Actual Result are equal when we run the "one-outer on the river"
+    scenario to exhaustion, dealing out all 44 river cards.
+</p>
+<h3>Multiple Outs on the River</h3>
+<p>
+    The same is true for <i>any</i> number of outs with just the River to come. If
+    the dog is drawing to a flush against the favorite's top pair, we'd be looking
+    at 9 outs.
+</p>
+
+<figure>
+    <div class="poker-felt">
+        <div class="poker-row">
+            <div class="poker-hand">
+                <div class="poker-hand-title">
+                    Favorite
+                </div>
+                {%- include card.html card="As" class="card-lg" -%}
+                {%- include card.html card="Kc" class="card-lg" -%}
+            </div>
+            <div class="poker-hand">
+                <div class="poker-hand-title">
+                    Underdog
+                </div>
+                {%- include card.html card="Jh" class="card-lg" -%}
+                {%- include card.html card="8h" class="card-lg" -%}
+            </div>
+        </div>
+        <div class="poker-row">
+            <div class="poker-hand">
+                <div class="poker-hand-title">
+                    Board
+                </div>
+                {%- include card.html card="4h" class="card-lg" -%}
+                {%- include card.html card="5h" class="card-lg" -%}
+                {%- include card.html card="Ac" class="card-lg" -%}
+                {%- include card.html card="Ts" class="card-lg" -%}
+            </div>
+        </div>
+        <div class="poker-row">
+            <div class="poker-hand">
+                <div class="poker-hand-title">
+                    Win
+                </div>
+                {%- include card.html card="Ah" showImage=false -%}
+                {%- include card.html card="Kh" showImage=false -%}
+                {%- include card.html card="Qh" showImage=false -%}
+                {%- include card.html card="Th" showImage=false -%}
+                {%- include card.html card="9h" showImage=false -%}
+                {%- include card.html card="7h" showImage=false -%}
+                {%- include card.html card="6h" showImage=false -%}
+                {%- include card.html card="3h" showImage=false -%}
+                {%- include card.html card="2h" showImage=false -%}
+            </div>
+            <div class="poker-hand">
+                <div class="poker-hand-title">
+                    Lose
+                </div>
+                {%- include card.html card="Ks" showImage=false -%}
+                {%- include card.html card="Qs" showImage=false -%}
+                {%- include card.html card="Js" showImage=false -%}
+                {%- include card.html card="9s" showImage=false -%}
+                {%- include card.html card="8s" showImage=false -%}
+                {%- include card.html card="7s" showImage=false -%}
+                {%- include card.html card="6s" showImage=false -%}
+                {%- include card.html card="5s" showImage=false -%}
+                {%- include card.html card="4s" showImage=false -%}
+                {%- include card.html card="3s" showImage=false -%}
+                {%- include card.html card="2s" showImage=false -%}<br/>
+                {%- include card.html card="Ad" showImage=false -%}
+                {%- include card.html card="Kd" showImage=false -%}
+                {%- include card.html card="Qd" showImage=false -%}
+                {%- include card.html card="Jd" showImage=false -%}
+                {%- include card.html card="Td" showImage=false -%}
+                {%- include card.html card="9d" showImage=false -%}
+                {%- include card.html card="8d" showImage=false -%}
+                {%- include card.html card="7d" showImage=false -%}
+                {%- include card.html card="6d" showImage=false -%}
+                {%- include card.html card="5d" showImage=false -%}
+                {%- include card.html card="4d" showImage=false -%}
+                {%- include card.html card="3d" showImage=false -%}
+                {%- include card.html card="2d" showImage=false -%}<br/>
+                {%- include card.html card="Qc" showImage=false -%}
+                {%- include card.html card="Jc" showImage=false -%}
+                {%- include card.html card="Tc" showImage=false -%}
+                {%- include card.html card="9c" showImage=false -%}
+                {%- include card.html card="8c" showImage=false -%}
+                {%- include card.html card="7c" showImage=false -%}
+                {%- include card.html card="6c" showImage=false -%}
+                {%- include card.html card="5c" showImage=false -%}
+                {%- include card.html card="4c" showImage=false -%}
+                {%- include card.html card="3c" showImage=false -%}
+                {%- include card.html card="2c" showImage=false -%}
+            </div>
+        </div>
+    </div>
+    <figcaption>
+        In our $44 pot situation, the Underdog's EV is $9, and if we ran it 44 times,
+        he'd get back exactly that.
+    </figcaption>
+</figure>
+
+<p>
+    Here's what each of those 44 pots will look like when you run it 44 times:
+</p>
+
+<table class="condensed-table">
+    <thead>
+        <tr>
+            <th>
+                Pot #
+            </th>
+            <th>
+                Card
+            </th>
+            <th>
+                Result
+            </th>
+            <th>
+                Pot Share
+            </th>
+            <th>
+                \(\Delta\) EV
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="cell-center">
+                1
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Ah" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-pos">W</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=1 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{1}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                2
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Kh" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-pos">W</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=1 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{1}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                3
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Qh" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-pos">W</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=1 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{1}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                4
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Th" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-pos">W</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=1 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{1}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                5
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="9h" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-pos">W</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=1 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{1}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                6
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="7h" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-pos">W</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=1 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{1}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                7
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="6h" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-pos">W</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=1 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{1}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                8
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="3h" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-pos">W</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=1 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{1}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                9
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="2h" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-pos">W</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=1 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{1}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                10
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Ks" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                11
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Qs" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                12
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Js" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                13
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="9s" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                14
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="8s" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                15
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="7s" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                16
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="6s" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                17
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="5s" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                18
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="4s" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                19
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="3s" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                20
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="2s" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                21
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Ad" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                22
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Kd" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                23
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Qd" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                24
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Jd" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                25
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Td" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                26
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="9d" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                27
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="8d" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                28
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="7d" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                29
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="6d" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                30
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="5d" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                31
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="4d" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                32
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="3d" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                33
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="2d" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                34
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Qc" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                35
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Jc" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                36
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="Tc" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                37
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="9c" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                38
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="8c" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                39
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="7c" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                40
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="6c" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                41
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="5c" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                42
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="4c" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                43
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="3c" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                44
+            </td>
+            <td class="cell-center">
+                {%- include card.html card="2c" showImage=false -%}
+            </td>
+            <td class="cell-center">
+                <span class="amt-neg">L</span>
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=0 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#cccccc}{+\frac{0}{44}} \)
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>
+                Total Pots
+            </td>
+            <th>
+                &nbsp;
+            </td>
+            <th>
+                &nbsp;
+            </td>
+            <th>
+                Total Amount Won
+            </td>
+            <th>
+                Total EV
+            </td>
+        </tr>
+        <tr>
+            <td class="cell-center">
+                44
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="cell-center">
+                {% include win-loss-amount.html amount=9 %}
+            </td>
+            <td class="cell-center">
+                \(\ \color{#00ff00}{+\frac{9}{44}} \)
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<p>
+    It's pretty easy to see that if you run it 44 times, exhausting all of the undealt cards,
+    then your number of outs will be exactly the number of mini-pots that you will win. So 2
+    outs means that you'll get \(\frac{2}{44}\) of the pot. 3 outs means \(\frac{3}{44}\). And
+    if your opponent is drawing dead, then you'll win all 44 pots -- But more importantly, why
+    the Hell would you waste the dealer's time if your opponent is drawing dead?
+</p>
+<p>
+    The more times you "run it", the more your actual results will converge toward the expected
+    value. In our extreme example of running it 44 times, the actual result is <i>EXACTLY</i>
+    your expected result and variance has been cut down to <i>ZERO</i>.
+</p>
+
+<h3>Running it 2 or 3 Times</h3>
+<p>
+    What if we live in the real world and we can't practically run it 44 times? Well, I guess
+    it's time to break out some formulas.
+</p>
+<h3>Running it Twice with a 1-Outer on the River</h3>
+<p>
+    It might seem silly for a person with a 1-outer to run it twice, because there's <i>zero</i>
+    chance he'll win both pots. In actuality, there's no net change to his EV and would
+    be trying to increase his odds of getting <i>any</i> kind of cash back on his near hopeless
+    situation. Chopping a pot can seem like a very favorable outcome when you need to hit your
+    {% include glossary-term.html term="case card" -%}.
+</p>
+<p>
+    By running it twice, you're doubling your chances of getting money back, but the amount you
+    receive will be halved.
+</p>
+<p>
+    The EV for running a 1-outer twice is pretty simple:
+</p>
+<p class="p-center">
+    \begin{align}
+    EV_{1{\text -}outer} & = { { P_{W1} \times P_{L2} } \over 2 } + { { P_{L1} \times P_{W2} } \over 2 } \\
+    \\
+    & = { { {1 \over 44 } \times {43 \over 43} } \over 2 } + { { {43 \over 44 } \times {1 \over 43} } \over 2 } \\
+    \\
+    & = { 2 \times {43 \over { 44 \times 43 } } \over 2 } \\
+    \\
+    & = {43 \over { 44 \times 43 } } \\
+    \\
+    & = {1 \over 44 } \\
+    \end{align}
+</p>
+<p>
+    Where \(P_{W1}\) is the probability of winning the first pot, \(P_{W2}\) is the probability of winning the
+    second pot, \(P_{L1}\) is the probability of losing the first pot, and \(P_{L2}\) is the probability of
+    losing the second pot.
+</p>
+<p>
+    And this is exactly the EV we saw when running it 44 times.
+</p>
+<h3>Running it Twice with a 2-Outer on the River</h3>
+<p>
+    This example is less trivial, and the formula is a little more complex. In the previous example,
+    we only had to consider the case where the underdog won 1 of the 2 pots. Here we also have to
+    calculate the probability of winning both pots.
+</p>
+<p>
+    Here's how we calculate the EV of running it twice on the river with a 2-outer:
+</p>
+<p class="p-center">
+    \begin{align}
+    EV_{2{\text -}outer} & = { { P_{W1} \times P_{L2} } \over 2 } + { { P_{L1} \times P_{W2} } \over 2 } + { P_{W1} \times P_{W2} }\\
+    \\
+    & = { { {2 \over 44 } \times {42 \over 43} } \over 2 } + { { {42 \over 44} \times {2 \over 43} } \over 2 } + [ { {2 \over 44 } \times {1 \over 43} } ] \\
+    \\
+    & = { { { { 2 \times 42 } \over { 44 \times 43 } } } \over 2 } + { { { { 42 \times 2 } \over { 44 \times 43} } } \over 2 } + {2 \over { 44 \times 43 } }\\
+    \\
+    & = { { 2 \times { { 2 \times 42 } \over { 44 \times 43 } } } \over 2 } + {2 \over { 44 \times 43 } } \\
+    \\
+    & = { {2 \times 42 } \over { 44 \times 43 } } + {2 \over { 44 \times 43 } } \\
+    \\
+    & = {86 \over { 44 \times 43 } } \\
+    \\
+    & = { { 2 \times 43 } \over { 44 \times 43 } } \\
+    \\
+    & = {2 \over 44} \\
+    \end{align}
+</p>
+<p>
+    And this is exactly the EV we saw when running it 44 times.
+</p>
+
+<h3>Running it n-Times with a z-Outer on the River</h3>
+<p>
+    And we can look at the general formula for calculating the EV of a z-outer with one card to come:
+</p>
+<p class="p-center">
+    \( \displaystyle \sum_{i=1}^n { { i \over n } {n \choose i} } { { {}_z \mathrm{ P }_i \times {}_{(44-z)} \mathrm{ P }_{(n-i)} } \over {}_{44} \mathrm{ P }_n }  \)
+</p>
+<p>
+    Where n is the number of times you want to run the river (\(0 < n \le 44\)) and z is the number
+    of outs (\(0 \le z \le 44\)). Here the "P"s are the operator for calculating Permutations, not
+    determining probabilities.
+</p>
+<p>
+    Breaking down this formula we can see that we are 
+</p>
+
+<table>
+    <tr>
+        <td>
+            \( \displaystyle \sum_{i=1}^n \)
+        </td>
+        <td>
+            Adding up each of the expected values of winning i number of pots from 1 to n.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            \( i \over n \)
+        </td>
+        <td>
+            Multiplied by the share of the pot you would win
+        </td>
+    </tr>
+    <tr>
+        <td>
+            \( {n \choose i} \)
+        </td>
+        <td>
+            Multiplied by combination of ways you could win that many pots
+        </td>
+    </tr>
+    <tr>
+        <td>
+            \( {}_z \mathrm{ P }_i \times {}_{(44-z)} \mathrm{ P }_{(n-i)} \)
+        </td>
+        <td>
+            Multiplied by number of ways you win i pots and lose n-i pots
+        </td>
+    </tr>
+    <tr>
+        <td>
+            \( {}_{44} \mathrm{ P }_n \)
+        </td>
+        <td>
+            Divided by the number of ways the n cards could be dealt
+        </td>
+    </tr>
+</table>
+
+<p>
+    And this formula can be simplified in the following manner:
+</p>
+<p class="p-center">
+    \begin{align}
+    EV_{z{\text -}outer} & = \displaystyle \sum_{i=1}^n { { i \over n } {n \choose i} } { { {}_z \mathrm{ P }_i \times {}_{(44-z)} \mathrm{ P }_{(n-i)} } \over {}_{44} \mathrm{ P }_n } \\
+    \\
+    &= \sum_{i=1}^n \frac{i}{n} \binom{n}{i} \frac{i!\binom{z}{i} (n-i)!\binom{44-z}{n-i}}{n!\binom{44}{n}} &&\small{ \text{because  } {}_a \mathrm{ P }_b = a! \binom{a}{b} }\\
+    \\
+    &= \sum_{i=1}^n \frac{i}{n} \frac{\binom{z}{i} \binom{44-z}{n-i}}{\binom{44}{n}} \\
+    \\
+    &= \sum_{i=1}^n \frac{i}{n} \frac{\frac{z}{i}\binom{z-1}{i-1} \binom{44-z}{n-i}}{\frac{44}{n}\binom{43}{n-1}} \\
+    \\
+    &= \frac{z}{44} \frac{\sum_{i=1}^n \binom{z-1}{i-1} \binom{44-z}{n-i}}{\binom{43}{n-1}} \\
+    \\
+    &= \frac{z}{44} \frac{\sum_{i=0}^{n-1} \binom{z-1}{i} \binom{44-z}{(n-1)-i}}{\binom{43}{n-1}} \\
+    \\
+    &= \frac{z}{44} \frac{\binom{(z-1)+(44-z)}{n-1}}{\binom{43}{n-1}} &&\small{\text{applying Vandermonde's Identity}}\\
+    \\
+    &= \frac{z}{44} \frac{\binom{43}{n-1}}{\binom{43}{n-1}} \\
+    \\
+    &= \frac{z}{44}
+    \end{align}
+</p>
+
+<p>
+    No, we're not using Voldemort's ID Card. We're applying
+    <a href="https://en.wikipedia.org/wiki/Vandermonde%27s_identity" target="_blank">Vandermonde's Identity</a>, 
+    which states the following:
+</p>
+<p class="p-center">
+    \( \displaystyle { \binom{x + y}{r} } = { \sum_{i=0}^r { \binom{x}{i} \binom{y}{r - i} } } \)
+</p>
+<figure>
+    <img src="{{site.baseurl}}/assets/img/posts/2022-04-27/01-voldemorts-id-600x398.png" alt="Voldemort's ID Card" title="Voldemort's ID Card" />
+    <figcaption>
+        This is what Voldemort uses to buy beer.
+    </figcaption>
+</figure>
+
+<h3>Running it n-Times with a z-Outer on the River with additional known cards</h3>
+<p>
+    And if we have information about mucked or burned cards, we can use a different value instead of 44.
+    So if we know 2 folded hands (4 additional cards), the number of unknown cards would be 40 (4 on the
+    board, 4 in the live hands, and 4 mucked = 12 cards subtracted from 52 cards would be 40 unknown cards)
+    and you could run it up to 40 times.
+</p>
+<p>
+    Here's the same formula as above except we've substituted the 44 unknown cards with \(y\).
+</p>
+<p class="p-center">
+    \begin{align}
+    EV_{z{\text -}outer} & = \displaystyle \sum_{i=1}^n { { i \over n } {n \choose i} } { { {}_z \mathrm{ P }_i \times {}_{(y-z)} \mathrm{ P }_{(n-i)} } \over {}_{y} \mathrm{ P }_n } \\
+    \\
+    &= \sum_{i=1}^n \frac{i}{n} \binom{n}{i} \frac{i!\binom{z}{i} (n-i)!\binom{y-z}{n-i}}{n!\binom{y}{n}} \\
+    \\
+    &= \sum_{i=1}^n \frac{i}{n} \cdot \frac{\binom{z}{i} \binom{y-z}{n-i}}{\binom{y}{n}} \\
+    \\
+    &= \sum_{i=1}^n \frac{i}{n} \cdot \frac{\frac{z}{i}\binom{z-1}{i-1} \binom{y-z}{n-i}}{\frac{y}{n}\binom{y-1}{n-1}} \\
+    \\
+    &= \frac{z}{y} \cdot \frac{\sum_{i=1}^n \binom{z-1}{i-1} \binom{y-z}{n-i}}{\binom{y-1}{n-1}} \\
+    \\
+    &= \frac{z}{y} \cdot \frac{\sum_{i=0}^{n-1} \binom{z-1}{i} \binom{y-z}{(n-1)-i}}{\binom{y-1}{n-1}} \\
+    \\
+    &= \frac{z}{y} \cdot \frac{\binom{(z-1)+(y-z)}{n-1}}{\binom{y-1}{n-1}} &&\small{\text{applying Vandermonde's Identity}}\\
+    \\
+    &= \frac{z}{y} \cdot \frac{\binom{y-1}{n-1}}{\binom{y-1}{n-1}} \\
+    \\
+    &= \frac{z}{y}
+    \end{align}
+</p>
+<p>
+    Where z is the number of outs, y is the number of unknown cards (\(1 \le y \le 44\)), and n is the 
+    number of times you want to run it (\(1 \le n \le y\)).
+</p>
+
+<h3>And that's every possible scenario when we're drawing the river card multiple times</h3>
+<p>
+    We've considered any number of outs (z), any number of unknown cards (y), running it any
+    number of times (n), and we've proven that this always reduces to an expected value of
+    \(\frac{z}{y}\) when just the river card is left to be dealt.
+</p>
+<p>
+    So we've learned the following:
+</p>
+<blockquote>
+    Your EV is the same no matter how many times you "run it"<br/>
+    Your actual result will converge to the EV the more times you "run it"<br/>
+    Your variance will lower the more times you "run it"<br/>
+</blockquote>
+
+<h3>On the next episode of JackAce...</h3>
+<p>
+    In the future, we'll look at running it multiple times on the turn, where the math gets more
+    complicated. When there are two or more cards to come, your results won't be deterministic,
+    especially when dealing all unknown cards may not be possible (if there is an uneven number of
+    undealt cards, for example).
+</p>
+<p>
+    If you have two outs, sometimes you'll win two pots,
+    and sometimes you'll only win one even if you run the deck to exhaustion (~22 times). This is because
+    sometimes your outs will show up on both the turn <i>and</i> the river and sometimes one of your outs
+    will remain undealt.
+</p>
+<p>
+
+</p>
+
+{%- include venn-badge.html isGambling=true isMath=true -%}

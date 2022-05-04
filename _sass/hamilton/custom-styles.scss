@@ -19,25 +19,31 @@ b, i {
 }
 figure {
     img {
-        margin-left: auto;
-        margin-right: auto;
+        -webkit-filter: drop-shadow(3px 3px 6px #69c);
+        filter: drop-shadow(3px 3px 6px #69c);
+        padding: 5px;
     }
     figcaption {
         margin-top: 2px;
         color: #666;
         font-style: italic;
-        text-align: center;
         .roulette-spot {
             width: 28px;
             height: 18px;
         }
     }
 }
+
 blockquote {
     footer {
+        font-size: 14px;
+        color: #999;
         text-align: right;
     }
 }
+
+// --------------------------------------------------
+// Hamilton theme overrides
 
 .post-content {
     h1, h2, h3, h4, h5, h6 {
@@ -47,13 +53,15 @@ blockquote {
 .post-title {
     font-family: 'Roboto Slab', 'Noto Serif SC', 'Noto Serif TC';
 }
-
 .copyright {
     font-size: 10px;
 }
 .excerpt-image {
     padding-bottom: 20px;
 }
+
+// --------------------------------------------------
+// Generic site-wide classes
 
 .small {
     font-size: 10px;
@@ -98,6 +106,26 @@ blockquote {
     font-size: 16px;
 }
 
+figure.figure-condensed {
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figcaption {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        .roulette-spot {
+            width: 28px;
+            height: 18px;
+        }
+    }
+}
+
+// --------------------------------------------------
+// Infobox classes (WIP)
+
 div.infobox-info, div.infobox-success, div.infobox-warning, div.infobox-error {
     border: 1px solid;
     margin: 10px 0px;
@@ -125,12 +153,18 @@ div.infobox-error {
     background-color: #FFBABA;
 }
 
+// --------------------------------------------------
+
 .more-link {
     font-size: 12px;
     background: none;
     border: solid 1px #2d3339;
     padding: 6px 10px;
 }
+
+// --------------------------------------------------
+// Glossary tool tip classes
+
 .glossary-term {
     position: relative;
     display: inline-block;
@@ -140,8 +174,8 @@ div.infobox-error {
 .glossary-term .tooltiptext {
     visibility: hidden;
     width: 200px;
-    background-color: #333;
-    color: #ff0;
+    background-color: rgb(17, 91, 104);
+    color: rgb(255, 255, 255);
     font-size: 14px;
     text-align: left;
     padding: 10px;
@@ -149,7 +183,7 @@ div.infobox-error {
   
     /* Position the tooltip text */
     position: absolute;
-    z-index: 1;
+    z-index: 999;
     bottom: 125%;
     left: 50%;
     margin-left: -60px;
@@ -160,22 +194,33 @@ div.infobox-error {
 }
 .glossary-term .tooltiptext::after {
     content: "";
+    z-index: 999;
     position: absolute;
     top: 100%;
     left: 10%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: rgb(17, 91, 104) transparent transparent transparent;
 }
 .glossary-term:hover .tooltiptext {
     visibility: visible;
+    z-index: 999;
     opacity: 1;
 }
+
+// --------------------------------------------------
+// JackAce gambling classes
 
 .roulette-spot {
     width: 42px;
     height: 27px;
+}
+.card-sm {
+    width: 17px;
+    height: 25px;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 .card-md {
     width: 35px;
@@ -251,6 +296,9 @@ div.infobox-error {
     margin: 2px;
 }
 
+// --------------------------------------------------
+// Table classes
+
 .strategy-table {
     font-size: 16px;
     th {
@@ -264,6 +312,20 @@ div.infobox-error {
         min-width: 40px;
         min-height: 20px;
     }
+}
+
+.bare-bones-table {
+    width: 100%;
+    th {
+        padding: 0px;
+        font-size: 12px;
+    }
+    td {
+        padding: 0px;
+        font-size: 12px;
+        text-align: center;
+    }
+
 }
 
 .betting-system-table {
@@ -589,14 +651,14 @@ div.infobox-error {
         padding: 20px;
     }
 
-    .clear-all-link {
+    .action-link {
         font-size: 12px;
         background-color: #ccc;
         border: solid 1px #2d3339;
         padding: 6px 10px;
         text-decoration: none;
     }
-    .clear-all-link:hover {
+    .action-link:hover {
         color: #00f;
         text-decoration: underline;
     }

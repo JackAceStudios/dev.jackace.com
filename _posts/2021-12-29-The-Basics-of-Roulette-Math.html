@@ -33,11 +33,14 @@ math: true
 <p>
     The trick is knowing that there is <i>NO</i> house advantage (a.k.a "house edge") in Roulette if we
     remove the zeroes
-    (<img src="{{site.baseurl}}/assets/img/roulette/0_g.svg" class="roulette-spot" alt="0 Green" /> 
-    and <img src="{{site.baseurl}}/assets/img/roulette/00_g.svg" class="roulette-spot" alt="00 Green" />).
+    ({%- include roulette-spot.html number="0" %}
+    and
+    {% include roulette-spot.html number="00" -%}).
     That means that if you were to make the same bet multiple times until you've bet on all the numbers that
-    aren't <img src="{{site.baseurl}}/assets/img/roulette/0_g.svg" class="roulette-spot" alt="0 Green" /> 
-    or <img src="{{site.baseurl}}/assets/img/roulette/00_g.svg" class="roulette-spot" alt="00 Green" />,
+    aren't
+    {% include roulette-spot.html number="0" %}
+    or
+    {% include roulette-spot.html number="00" -%},
     then your winning bet would be paid off by all of your losing bets, leaving you with no gain and no
     loss.
 </p>
@@ -51,7 +54,7 @@ math: true
     making money on the bets as a whole. We're just doing it here hypothetically for illustrative purposes.
 </p>
 <h3>1-Number Bet: "Straight-Up"</h3>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/roulette-01-straight-up-601x291.png" alt="35 losing bets pay the winning bet" />
     <figcaption>
         35 losing bets pay the winning bet (35:1). The green background represents the potential
@@ -65,7 +68,7 @@ math: true
     the winner, the Straight-Up bet needs to pay 35 to 1.
 </p>
 <h3>2-Number Bet: "Split"</h3>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/roulette-02-split-601x291.png" alt="17 losing bets pay the winning bet" />
     <figcaption>17 losing bets pay the winning bet (17:1)</figcaption>
 </figure>
@@ -74,15 +77,19 @@ math: true
     have to make sure there is no "overlap" in your bets, where hitting a single number would result in
     more than one Split bet winning.
 </p>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/roulette-02a-split-overlap-601x291.png" alt="Two Split bets that overlap and win when the 1 hits" />
-    <figcaption>Two Split bets that overlap and both win when the <img src="{{site.baseurl}}/assets/img/roulette/1_r.svg" class="roulette-spot" alt="1 Red" /> hits</figcaption>
+    <figcaption>
+        Two Split bets that overlap and both win when the
+        {% include roulette-spot.html number="1" %}
+        hits
+    </figcaption>
 </figure>
 <p>
     The 17 losing bets will pay off the winning bet, so the 2-number bet pays 17 to 1.
 </p>
 <h3>3-Number Bet: "Street"</h3>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/roulette-03-street-601x291.png" alt="11 losing bets pay the winning bet" />
     <figcaption>11 losing bets pay the winning bet (11:1)</figcaption>
 </figure>
@@ -91,7 +98,7 @@ math: true
     one winner at a rate of 11 to 1.
 </p>
 <h3>4-Number Bet: "Corner"</h3>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/roulette-04-corner-601x291.png" alt="8 losing bets pay the winning bet" />
     <figcaption>The 4-number bets along the top (the red striped regions) are not valid Corner bets, but are included here to illustrate coverage of the table</figcaption>
 </figure>
@@ -103,10 +110,10 @@ math: true
 <p>
     There wouldn't be an issue with a casino allowing some type of "a-la-carte" 4-number bet where all four
     numbers were in a straight line (for example, if you could make a 4-number bet on the
-    <img src="{{site.baseurl}}/assets/img/roulette/3_r.svg" class="roulette-spot" alt="3 Red" />,
-    <img src="{{site.baseurl}}/assets/img/roulette/6_b.svg" class="roulette-spot" alt="6 Black" />,
-    <img src="{{site.baseurl}}/assets/img/roulette/9_r.svg" class="roulette-spot" alt="9 Red" />, &amp;
-    <img src="{{site.baseurl}}/assets/img/roulette/12_r.svg" class="roulette-spot" alt="12 Red" />),
+    {% include roulette-spot.html number="3" -%},
+    {% include roulette-spot.html number="6" -%},
+    {% include roulette-spot.html number="9" -%}, &amp;
+    {% include roulette-spot.html number="12" -%},
     the problem is with the game's layout. There's no area on the felt where you could place a chip
     and it would unambiguously identify which 4 spots you wanted to bet on. It would most
     likely just look like you were trying to make a 2-number split bet.
@@ -116,18 +123,18 @@ math: true
     one of the groups, you would bet paid 8-to-1 from the 8 losing groups.
 </p>
 <h3>5-Number Bet: "Basket"</h3>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/roulette-05-basket-601x291.png" alt="The 5-number 'Basket' bet can not evenly split up the 36 number field" />
     <figcaption>The 5-number 'Basket' bet can not evenly split up the 36 number field</figcaption>
 </figure>
 <p>
     We're going to skip this bet for now. The five-number "Basket" bet is only possible by betting on
-    <img src="{{site.baseurl}}/assets/img/roulette/0_g.svg" class="roulette-spot" alt="0 Green" /> ,
-    <img src="{{site.baseurl}}/assets/img/roulette/00_g.svg" class="roulette-spot" alt="00 Green" />,
-    <img src="{{site.baseurl}}/assets/img/roulette/1_r.svg" class="roulette-spot" alt="1 Red" />,
-    <img src="{{site.baseurl}}/assets/img/roulette/2_b.svg" class="roulette-spot" alt="2 Black" />, and
-    <img src="{{site.baseurl}}/assets/img/roulette/3_r.svg" class="roulette-spot" alt="3 Red" />, which
-    won't allow us to ignore the zeroes as we have been doing so far.
+    {% include roulette-spot.html number="0" -%},
+    {% include roulette-spot.html number="00" -%},
+    {% include roulette-spot.html number="1" -%},
+    {% include roulette-spot.html number="2" -%}, and
+    {% include roulette-spot.html number="3" -%},
+    which won't allow us to ignore the zeroes as we have been doing so far.
 </p>
 <p>
     It's also the only bet that <i>can't</i> evenly split the 36 number field (since 36 is not evenly divisible
@@ -135,7 +142,7 @@ math: true
     spots.
 </p>
 <h3>6-Number Bet: "Double-Street"</h3>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/roulette-06-double-street-601x291.png" alt="5 losing bets pay the winning bet" />
     <figcaption>5 losing bets pay the winning bet (5:1)</figcaption>
 </figure>
@@ -143,7 +150,7 @@ math: true
     Pays 5 to 1. Hopefully, you've figured out how this works by now.
 </p>
 <h3>12-Number Bet: "Dozen" or "Column"</h3>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/roulette-12-dozen-601x291.png" alt="2 losing bets pay the winning bet" />
     <figcaption>2 losing bets pay the winning bet (2:1)</figcaption>
 </figure>
@@ -151,7 +158,7 @@ math: true
     Pays 2 to 1.
 </p>
 <h3>18-Number Bet: "Red"/"Black", "Even"/"Odd", "1st Half"/"2nd Half"</h3>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/roulette-18-even-money-601x291.png" alt="Losing bet pays the winning bet" />
     <figcaption>Losing bet pays the winning bet (1:1)</figcaption>
 </figure>
@@ -413,7 +420,7 @@ math: true
     The Basket bet is truly the <i>WORST</i> bet available on one of the worst table games.
     So, if you ever find yourself betting the Basket, you should ask yourself this question:
 </p>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/ryan-reynolds-but-why-498x278.gif" alt="But why?" />
     <figcaption>My reaction when someone bets the Basket</figcaption>
 </figure>
@@ -494,7 +501,7 @@ math: true
 <p class="cell-center">
     \( \$10/hand \times 60 {hands \over hour} \times 5.26\% = \color{red}{$31.56/hour}\)
 </p>
-<figure>
+<figure class="figure-condensed">
     <img src="{{site.baseurl}}/assets/img/posts/2021-12-29/mouth-agape-omg-wtf-bbq.jpeg" alt="mfw I see the hourly loss for Roulette" />
     <figcaption>My face when I calculate the hourly loss for Roulette</figcaption>
 </figure>
